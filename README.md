@@ -54,11 +54,15 @@ Para cada etapa do processo da resolução para a soma do triângulo, você deve
 As dúvidas para a resolução da lógica do problema faz parte do teste, portanto ao passar os 7 dias mande um e-mail com o título **[Teste Fullstack] Teste do Triângulo - Finalização** para beawsome@waac.com.br mesmo se não tiver finalizado.
 
 #### Planejamento
+
 Estimativa de Horas para Realização: 40 horas
-Tecnologia que será utilizada: 
-1-Devido a minha prévia experiencia com Java, ela será utilizada para o desenvolvimento desse teste. No campo de estratégia é mencionado que posso escolher a linguagem de programação. Porém admito que fiquei na dúvida se java poderia ser utilizado nesse teste.
-2-Com relação ao posterior teste automatizado, nesse momento inicial de desenvolvimento, ainda não tenho certeza se vou utilizar JUnit ou Robot framework para seu desenvolvimento, mas com certeza um desses dois métodos de teste será utilizado. 
-Estratégia para desenvolvimento: 
-1-Iniciar desenvolvimento de front-end, definir posicionamento na tela para inserção dos dados, além de definir posicionamento das informações que serão mostradas.
-2-Iniciar desenvolvimento do back-end, codificar a lógica que será utilizada para a execução do programa e preparar informações para serem exibidas, codificar a lógica para a soma dos valores inseridos, armazenamento dos dados por ID e os tempos de execução.
-3-Continuar desenvolvimento do front-end, quando as informações estiverem sendo retornadas corretamente, preparar a exibição do triangulo na tela mostrando o caminho percorrido e os números que foram somados. 
+
+Tecnologia que será utilizada:
+ 
+1.Devido a minha prévia experiencia com Java, ela será utilizada para o desenvolvimento desse teste. No campo de estratégia é mencionado que posso escolher a linguagem de programação. Porém admito que fiquei na dúvida se java poderia ser utilizado nesse teste.
+2.Com relação ao posterior teste automatizado, nesse momento inicial de desenvolvimento, ainda não tenho certeza se vou utilizar JUnit ou Robot framework para seu desenvolvimento, mas com certeza um desses dois métodos de teste será utilizado. 
+Estratégia para desenvolvimento:
+ 
+1.Iniciar desenvolvimento de front-end, definir posicionamento na tela para inserção dos dados, além de definir posicionamento das informações que serão mostradas.
+2.Iniciar desenvolvimento do back-end, codificar a lógica que será utilizada para a execução do programa e preparar informações para serem exibidas, codificar a lógica para a soma dos valores inseridos, armazenamento dos dados por ID e os tempos de execução.
+3.Continuar desenvolvimento do front-end, quando as informações estiverem sendo retornadas corretamente, preparar a exibição do triangulo na tela mostrando o caminho percorrido e os números que foram somados. 

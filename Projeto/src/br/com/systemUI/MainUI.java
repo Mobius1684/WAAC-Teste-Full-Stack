@@ -237,9 +237,10 @@ public class MainUI {
 		frame.getContentPane().add(lblX4_4);
 		
 		JLabel lblSomaFormada = new JLabel("A soma formada entre os maiores n\u00FAmeros \u00E9:");
+		layout.putConstraint(SpringLayout.WEST, lblSomaFormada, 0, SpringLayout.WEST, lblX4_1);
+		layout.putConstraint(SpringLayout.EAST, lblSomaFormada, 0, SpringLayout.EAST, BotaoAplicar);
 		lblSomaFormada.setName("lblSomaFormada");
 		layout.putConstraint(SpringLayout.SOUTH, lblSomaFormada, -49, SpringLayout.SOUTH, frame.getContentPane());
-		layout.putConstraint(SpringLayout.EAST, lblSomaFormada, 0, SpringLayout.EAST, comboBox1Linha3);
 		lblSomaFormada.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		frame.getContentPane().add(lblSomaFormada);
 		
@@ -272,10 +273,9 @@ public class MainUI {
 		frame.getContentPane().add(panel2_1);
 		
 		Panel panel2_2 = new Panel();
+		layout.putConstraint(SpringLayout.NORTH, panel2_2, 6, SpringLayout.SOUTH, lblX2_1);
 		panel2_2.setName("panel2_2");
-		layout.putConstraint(SpringLayout.NORTH, panel2_2, 0, SpringLayout.NORTH, panel2_1);
 		layout.putConstraint(SpringLayout.WEST, panel2_2, 0, SpringLayout.WEST, panel1_1);
-		layout.putConstraint(SpringLayout.SOUTH, panel2_2, -143, SpringLayout.NORTH, lblSomaFormada);
 		layout.putConstraint(SpringLayout.EAST, panel2_2, 0, SpringLayout.EAST, panel1_1);
 		panel2_2.setBackground(Color.LIGHT_GRAY);
 		frame.getContentPane().add(panel2_2);
@@ -307,6 +307,7 @@ public class MainUI {
 		frame.getContentPane().add(panel3_1);
 		
 		Panel panel3_2 = new Panel();
+		layout.putConstraint(SpringLayout.SOUTH, panel2_2, -23, SpringLayout.NORTH, panel3_2);
 		panel3_2.setName("panel3_2");
 		layout.putConstraint(SpringLayout.NORTH, panel3_2, 6, SpringLayout.SOUTH, lblX3_1);
 		layout.putConstraint(SpringLayout.WEST, panel3_2, -34, SpringLayout.EAST, lblX2_1);

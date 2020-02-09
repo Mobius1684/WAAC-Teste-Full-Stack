@@ -3,6 +3,7 @@ package br.com.systemUI;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Graphics;
+import java.awt.Panel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -31,6 +32,7 @@ public class Listener implements ActionListener{
 		CalculoMaximo calculo = new CalculoMaximo();
 		results = calculo.calculoMaximo(valueList);
 
+		resetPanels(components);
 		populatePanels(components, results);
 
 		for(int j=0;j<components.length;j++) 
@@ -132,62 +134,74 @@ public class Listener implements ActionListener{
 			if (pos2 == 0 && component.getName().equalsIgnoreCase("panel1_1"))
 			{
 				Graphics line = component.getGraphics();
-				line.drawLine(0, 0, 200, 200);
+				line.drawLine(0, 14, 40, 0);
 			}
 			if (pos2 == 1 && component.getName().equalsIgnoreCase("panel1_2"))
 			{
 				Graphics line = component.getGraphics();
-				line.drawLine(0, 0, 200, 200);
+				line.drawLine(0, 0, 200, 75);
 			}
 			if (pos3 == 0 && component.getName().equalsIgnoreCase("panel2_1"))
 			{
 				Graphics line = component.getGraphics();
-				line.drawLine(0, 0, 200, 200);
+				line.drawLine(0, 14, 40, 0);
 			}
-			if (pos3 == 1 && component.getName().equalsIgnoreCase("panel2_2"))
+			if (pos3 == 1 && pos2 == 0 && component.getName().equalsIgnoreCase("panel2_2"))
 			{
 				Graphics line = component.getGraphics();
-				line.drawLine(0, 0, 200, 200);
+				line.drawLine(0, 0, 200, 75);
 			}
-			if (pos3 == 2 && component.getName().equalsIgnoreCase("panel2_3"))
+			if (pos3 == 1 && pos2 == 1 && component.getName().equalsIgnoreCase("panel2_3"))
 			{
 				Graphics line = component.getGraphics();
-				line.drawLine(0, 0, 200, 200);
+				line.drawLine(0, 14, 40, 0);
 			}
-			if (pos3 == 3 && component.getName().equalsIgnoreCase("panel2_4"))
+			if (pos3 == 2 && component.getName().equalsIgnoreCase("panel2_4"))
 			{
 				Graphics line = component.getGraphics();
-				line.drawLine(0, 0, 200, 200);
+				line.drawLine(0, 0, 200, 75);
 			}
 			if (pos4 == 0 && component.getName().equalsIgnoreCase("panel3_1"))
 			{
 				Graphics line = component.getGraphics();
-				line.drawLine(0, 0, 200, 200);
+				line.drawLine(0, 14, 40, 0);
 			}
-			if (pos4 == 1 && component.getName().equalsIgnoreCase("panel3_2"))
+			if (pos4 == 1 && pos3 == 0 && component.getName().equalsIgnoreCase("panel3_2"))
 			{
 				Graphics line = component.getGraphics();
-				line.drawLine(0, 0, 200, 200);
+				line.drawLine(0, 0, 200, 75);
 			}
-			if (pos4 == 2 && component.getName().equalsIgnoreCase("panel3_3"))
+			if (pos4 == 1 && pos3 == 1 && component.getName().equalsIgnoreCase("panel3_3"))
 			{
 				Graphics line = component.getGraphics();
-				line.drawLine(0, 0, 200, 200);
+				line.drawLine(0, 14, 40, 0);
 			}
-			if (pos4 == 3 && component.getName().equalsIgnoreCase("panel3_4"))
+			if (pos4 == 2 && pos3 == 1 && component.getName().equalsIgnoreCase("panel3_4"))
 			{
 				Graphics line = component.getGraphics();
-				line.drawLine(0, 0, 200, 200);
+				line.drawLine(0, 0, 200, 75);
 			}
-			if (pos4 == 4 && component.getName().equalsIgnoreCase("panel3_5"))
+			if (pos4 == 2 && pos3 == 2 && component.getName().equalsIgnoreCase("panel3_5"))
 			{
 				Graphics line = component.getGraphics();
-				line.drawLine(0, 0, 200, 200);
+				line.drawLine(0, 14, 40, 0);
 			}
-			if (pos4 == 5 && component.getName().equalsIgnoreCase("panel3_6"))
+			if (pos4 == 3 && component.getName().equalsIgnoreCase("panel3_6"))
 			{
 				Graphics line = component.getGraphics();
-				line.drawLine(0, 0, 200, 200);
+				line.drawLine(0, 0, 200, 75);
+			}
+		}
+	}
+	
+	private void resetPanels(Component [] components) { 
+		for(int j=0;j<components.length;j++) 
+		{
+			Container component = (Container) components[j];
+			if (component instanceof Panel)
+			{
+				Panel panel = (Panel) component;
+				panel.getGraphics().clearRect(0, 0, 100, 100);
 			}
 		}
 	}

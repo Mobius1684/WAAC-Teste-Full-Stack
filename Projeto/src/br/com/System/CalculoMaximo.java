@@ -49,6 +49,10 @@ public class CalculoMaximo {
 			{
 				higherValue3 = miniValueList3.get(i);
 				pos3 = i;
+				if ((pos2 == 0 && pos3 == 2) || (pos2 == 1 && pos3 == 0))
+				{
+					pos3 = pos2;
+				}
 			}
 		}
 		for(int i =0; i < miniValueList4.size(); i++)
@@ -57,6 +61,10 @@ public class CalculoMaximo {
 			{
 				higherValue4 = miniValueList4.get(i);
 				pos4 = i;
+				if ((pos3 == 0 && pos4 >= 2) || (pos3 == 1 && (pos4 == 0 || pos4 == 3)) || (pos3 == 2 && pos4 <= 1)) 
+				{
+					pos4 = pos3;
+				}
 			}
 		}
 		int SumValue1 = miniValueList1;

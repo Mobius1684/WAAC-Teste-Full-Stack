@@ -246,7 +246,6 @@ public class MainUI {
 		
 		Panel panel1_1 = new Panel();
 		panel1_1.setName("panel1_1");
-		panel1_1.setBackground(Color.WHITE);
 		layout.putConstraint(SpringLayout.NORTH, panel1_1, 160, SpringLayout.SOUTH, comboBox1Linha2);
 		layout.putConstraint(SpringLayout.WEST, panel1_1, -44, SpringLayout.WEST, lblX1_1);
 		layout.putConstraint(SpringLayout.SOUTH, panel1_1, 176, SpringLayout.SOUTH, comboBox1Linha2);
@@ -260,7 +259,6 @@ public class MainUI {
 		layout.putConstraint(SpringLayout.WEST, panel1_2, 6, SpringLayout.EAST, lblX1_1);
 		layout.putConstraint(SpringLayout.SOUTH, panel1_2, 0, SpringLayout.SOUTH, panel1_1);
 		layout.putConstraint(SpringLayout.EAST, panel1_2, 0, SpringLayout.EAST, lblSegundaLinha);
-		panel1_2.setBackground(Color.WHITE);
 		frame.getContentPane().add(panel1_2);
 		
 		Panel panel2_1 = new Panel();
@@ -269,7 +267,6 @@ public class MainUI {
 		layout.putConstraint(SpringLayout.WEST, panel2_1, 0, SpringLayout.WEST, lblX3_1);
 		layout.putConstraint(SpringLayout.SOUTH, panel2_1, -1, SpringLayout.NORTH, lblX3_1);
 		layout.putConstraint(SpringLayout.EAST, panel2_1, -15, SpringLayout.EAST, lblX2_1);
-		panel2_1.setBackground(Color.WHITE);
 		frame.getContentPane().add(panel2_1);
 		
 		Panel panel2_2 = new Panel();
@@ -277,7 +274,6 @@ public class MainUI {
 		panel2_2.setName("panel2_2");
 		layout.putConstraint(SpringLayout.WEST, panel2_2, 0, SpringLayout.WEST, panel1_1);
 		layout.putConstraint(SpringLayout.EAST, panel2_2, 0, SpringLayout.EAST, panel1_1);
-		panel2_2.setBackground(Color.WHITE);
 		frame.getContentPane().add(panel2_2);
 		
 		Panel panel2_3 = new Panel();
@@ -285,14 +281,12 @@ public class MainUI {
 		layout.putConstraint(SpringLayout.NORTH, panel2_3, 6, SpringLayout.SOUTH, lblX2_2);
 		layout.putConstraint(SpringLayout.WEST, panel2_3, -4, SpringLayout.WEST, panel1_2);
 		layout.putConstraint(SpringLayout.SOUTH, panel2_3, 1, SpringLayout.SOUTH, panel2_1);
-		panel2_3.setBackground(Color.WHITE);
 		frame.getContentPane().add(panel2_3);
 		
 		Panel panel2_4 = new Panel();
 		layout.putConstraint(SpringLayout.NORTH, panel2_4, 0, SpringLayout.NORTH, panel2_1);
 		layout.putConstraint(SpringLayout.SOUTH, panel2_4, 0, SpringLayout.SOUTH, panel2_1);
 		panel2_4.setName("panel2_4");
-		panel2_4.setBackground(Color.WHITE);
 		frame.getContentPane().add(panel2_4);
 		
 		Panel panel3_1 = new Panel();
@@ -301,7 +295,6 @@ public class MainUI {
 		layout.putConstraint(SpringLayout.WEST, panel3_1, 0, SpringLayout.WEST, lblX4_1);
 		layout.putConstraint(SpringLayout.SOUTH, panel3_1, 22, SpringLayout.SOUTH, lblX3_1);
 		layout.putConstraint(SpringLayout.EAST, panel3_1, 38, SpringLayout.WEST, lblX4_1);
-		panel3_1.setBackground(Color.WHITE);
 		frame.getContentPane().add(panel3_1);
 		
 		Panel panel3_2 = new Panel();
@@ -311,7 +304,6 @@ public class MainUI {
 		layout.putConstraint(SpringLayout.WEST, panel3_2, -34, SpringLayout.EAST, lblX2_1);
 		layout.putConstraint(SpringLayout.SOUTH, panel3_2, 0, SpringLayout.SOUTH, panel3_1);
 		layout.putConstraint(SpringLayout.EAST, panel3_2, 0, SpringLayout.EAST, lblX2_1);
-		panel3_2.setBackground(Color.WHITE);
 		frame.getContentPane().add(panel3_2);
 		
 		Panel panel3_3 = new Panel();
@@ -319,7 +311,6 @@ public class MainUI {
 		layout.putConstraint(SpringLayout.NORTH, panel3_3, 6, SpringLayout.SOUTH, lblX3_2);
 		layout.putConstraint(SpringLayout.WEST, panel3_3, 18, SpringLayout.EAST, panel3_2);
 		layout.putConstraint(SpringLayout.SOUTH, panel3_3, 0, SpringLayout.SOUTH, panel3_1);
-		panel3_3.setBackground(Color.WHITE);
 		frame.getContentPane().add(panel3_3);
 		
 		Panel panel3_4 = new Panel();
@@ -330,7 +321,6 @@ public class MainUI {
 		layout.putConstraint(SpringLayout.WEST, panel3_4, 0, SpringLayout.WEST, panel1_2);
 		layout.putConstraint(SpringLayout.SOUTH, panel3_4, 0, SpringLayout.SOUTH, panel3_1);
 		layout.putConstraint(SpringLayout.EAST, panel3_4, -8, SpringLayout.EAST, lblX4_3);
-		panel3_4.setBackground(Color.WHITE);
 		frame.getContentPane().add(panel3_4);
 		
 		Panel panel3_5 = new Panel();
@@ -340,7 +330,6 @@ public class MainUI {
 		layout.putConstraint(SpringLayout.NORTH, panel3_5, 6, SpringLayout.SOUTH, lblX3_3);
 		layout.putConstraint(SpringLayout.WEST, panel3_5, 13, SpringLayout.EAST, panel3_4);
 		layout.putConstraint(SpringLayout.SOUTH, panel3_5, 0, SpringLayout.SOUTH, panel3_1);
-		panel3_5.setBackground(Color.WHITE);
 		frame.getContentPane().add(panel3_5);
 		
 		Panel panel3_6 = new Panel();
@@ -350,7 +339,6 @@ public class MainUI {
 		layout.putConstraint(SpringLayout.EAST, panel3_6, 7, SpringLayout.EAST, lblX4_4);
 		layout.putConstraint(SpringLayout.NORTH, panel3_6, 0, SpringLayout.NORTH, panel3_1);
 		layout.putConstraint(SpringLayout.WEST, panel3_6, -27, SpringLayout.EAST, lblX4_4);
-		panel3_6.setBackground(Color.WHITE);
 		frame.getContentPane().add(panel3_6);
 		BotaoAplicar.addActionListener(new Listener (frame.getContentPane()));
 		

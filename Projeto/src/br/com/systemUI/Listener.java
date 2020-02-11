@@ -28,9 +28,8 @@ public class Listener implements ActionListener{
 		ArrayList<Integer> results = new ArrayList<Integer>();
 		valueList = populateValuesFromComboBox(components);
 		populateLabels(components, valueList);
-		
-		CalculoMaximo calculo = new CalculoMaximo();
-		results = calculo.calculoMaximo(valueList);
+
+		results = new CalculoMaximo().calculoMaximo(valueList);
 
 		resetPanels(components);
 		populatePanels(components, results);

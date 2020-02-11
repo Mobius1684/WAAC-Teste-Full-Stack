@@ -1,10 +1,16 @@
 package br.com.System;
 
+import java.io.IOException;
 import java.util.ArrayList;
+import br.com.System.ManipulaLogs;
 
 public class CalculoMaximo {
 
+	private static long idCounter = 0;
+
 	public ArrayList<Integer> calculoMaximo(ArrayList<Integer> valueList) {
+		long start = System.currentTimeMillis();
+		String id = createID();
 		int miniValueList1 = 0;
 		ArrayList<Integer> miniValueList2 = new ArrayList<Integer>();
 		ArrayList<Integer> miniValueList3 = new ArrayList<Integer>();
@@ -52,6 +58,7 @@ public class CalculoMaximo {
 				if ((pos2 == 0 && pos3 == 2) || (pos2 == 1 && pos3 == 0))
 				{
 					pos3 = pos2;
+					higherValue3 = miniValueList3.get(pos2);
 				}
 			}
 		}
@@ -64,6 +71,7 @@ public class CalculoMaximo {
 				if ((pos3 == 0 && pos4 >= 2) || (pos3 == 1 && (pos4 == 0 || pos4 == 3)) || (pos3 == 2 && pos4 <= 1)) 
 				{
 					pos4 = pos3;
+					higherValue4 = miniValueList4.get(pos3);
 				}
 			}
 		}
@@ -83,6 +91,17 @@ public class CalculoMaximo {
 		results.add(pos3);
 		results.add(pos4);
 
+		long elapsed = System.currentTimeMillis() - start;
+		try {
+			new ManipulaLogs().GravaLog(id, valueList, results, elapsed);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		return results;
 	}
+
+	private static synchronized String createID()
+	{
+		return String.valueOf(idCounter++);
+	} 
 }

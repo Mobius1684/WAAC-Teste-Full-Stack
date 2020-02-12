@@ -8,6 +8,10 @@ import java.util.ArrayList;
 
 public class ManipulaLogs {
 
+	/**
+	 * Creates the log containing the input id created during execution, the input list, 
+	 * the result values from the calculations and the elapsed time of the application.
+	 */
 	public void GravaLog(String id, ArrayList<Integer> valueList, ArrayList<Integer> results, long elapsed) throws IOException{
 		BufferedWriter writer = new BufferedWriter(new FileWriter("LogFile.txt", true));
 		writer.newLine();

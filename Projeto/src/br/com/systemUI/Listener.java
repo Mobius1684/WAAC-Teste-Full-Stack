@@ -22,6 +22,11 @@ public class Listener implements ActionListener{
 	}
 
 	@Override
+	/**
+	 * Action to be performed when clicking the "Aplicar" button.
+	 * This will start the logic to alter the screen components and process
+	 * the program's logic.
+	 */
 	public void actionPerformed(ActionEvent buttonPressed) {
 		Component [] components = container.getComponents();
 		ArrayList<Integer> valueList = new ArrayList<Integer>();
@@ -45,7 +50,11 @@ public class Listener implements ActionListener{
 			}
 		}
 	}
-	
+
+	/**
+	 * This method gets the values inserted in the comboboxes and places them in
+	 * in an Integer arrayList so the values can be manipulated.
+	 */
 	private ArrayList<Integer> populateValuesFromComboBox(Component [] components) {
 		ArrayList<Integer> valueList = new ArrayList<Integer>();
 		for(int j=0;j<components.length;j++)
@@ -122,7 +131,11 @@ public class Listener implements ActionListener{
 		}
 		return valueList;
 	}
-	
+
+	/**
+	 * This method gets the results received after processing the triangle's calculations,
+	 * and draws the lines between the triangle values in the application.
+	 */
 	private void populatePanels(Component [] components, ArrayList<Integer> results) {
 		int pos2 = results.get(5);
 		int pos3 = results.get(6);
@@ -193,6 +206,9 @@ public class Listener implements ActionListener{
 		}
 	}
 	
+	/**
+	 * This method resets the drawn lines in the triangle for the next execution.
+	 */
 	private void resetPanels(Component [] components) { 
 		for(int j=0;j<components.length;j++) 
 		{
@@ -204,7 +220,11 @@ public class Listener implements ActionListener{
 			}
 		}
 	}
-	
+
+	/**
+	 * This method changes the contents of the triangle's labels, changing their original value from 'XX'
+	 * to the values which were passed by the user during the execution.
+	 */
 	private void populateLabels(Component [] components, ArrayList<Integer> valueList) {
 		for(int j=0;j<components.length;j++) 
 		{

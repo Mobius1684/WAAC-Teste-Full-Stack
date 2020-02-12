@@ -8,6 +8,15 @@ public class CalculoMaximo {
 
 	private static long idCounter = 0;
 
+	/**
+	 * This method calculates the values of the triangle's sum for each of it's lines.
+	 * It separates the received input into 3 smaller arrays and one simple int variable(for the first triangle line),
+	 * the other smaller arrays represent each triangle line, and the calculations will be done separately
+	 * to each of these arrays.
+	 * An Id is also generated here for each iteration of the execution, there is also an a timer added to check the time taken on the execution,
+	 * although during tests, the timer was never different from 0 unless I stopped the execution for a while through
+	 * debugging. The information used here is going to be logged to a file.
+	 */
 	public ArrayList<Integer> calculoMaximo(ArrayList<Integer> valueList) {
 		long start = System.currentTimeMillis();
 		String id = createID();
